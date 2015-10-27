@@ -1,0 +1,18 @@
+<div>
+  <ul class='thumbnails'>
+  <li class='shot span3' ng-repeat="movie in list.results">
+    <div class="thumbnail">
+      <a href="#movies/{{ movie.id }}">
+        <img ng-src="https://image.tmdb.org/t/p/w185/{{movie.poster_path}}">
+      </a>
+      <strong class="title">{{movie.title}}</strong>
+    </div>
+  </li>
+  </ul>
+  <button
+    class="btn btn-primary"
+    ng-click='loadNextPage()'
+    ng-show='list.page < list.pages'>
+    Load More
+  </button>
+</div>

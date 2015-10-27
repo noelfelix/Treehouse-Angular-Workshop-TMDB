@@ -1,0 +1,15 @@
+<div>
+	<img ng-src="https://image.tmdb.org/t/p/w396/{{movie.poster_path}}">
+	<h3>{{movie.release_date | dabbbleFailDate: "MMMM dd, yyyy"}}</h3>
+	<h3>
+		<span data-ng-repeat="thumb in thumbs">
+		{{thumb}}
+		</span>
+		 - {{movie.vote_average}}/{{thumbs.length}}
+	</h3>
+	<h3>{{movie.vote_count}} votes</h3>
+	<h4>{{movie.overview}}</h4>
+	<a href="http://www.imdb.com/title/{{movie.imdb_id}}">
+		<h4>IMDB</h4>
+	</a> 
+</div>
