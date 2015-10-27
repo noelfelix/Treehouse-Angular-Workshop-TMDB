@@ -2,7 +2,7 @@
 
 var controllers = angular.module('dabbbleFail.controllers', []);
 
-var apiKey = '2047f691362eca75ead64c4a36d0a0ae';
+var apiKey = 'INSERT API KEY HERE';
 
 controllers.controller('AppCtrl', function ($scope) {
 	$scope.name = "Module!!!";
